@@ -1,41 +1,41 @@
-#home{
-  //xs
+#home {
+  // xs
   height: 350px;
   position: relative;
   margin-top: 60px;
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  //左箭頭
-  .carousel-control-prev{
-    background: url('../images/arrow_left.png') no-repeat center/80px;
+  // 左箭頭
+  .carousel-control-prev {
+    background: url(../images/arrow_left.png) no-repeat center/80px;
     opacity: 1;
-    transition: .3s;
+    transition: 0.3s;
+    z-index: 6;
+  }
+  .carousel-control-prev:hover {
+    background: url(../images/arrow_left_hover.png) no-repeat center/100px;
   }
 
-  .carousel-control-prev:hover{
-    background: url('../images/arrow_left_hover.png') no-repeat center/100px;
-  }
-
-  //左箭頭
-  .carousel-control-next{
-    background: url('../images/arrow_right.png') no-repeat center/80px;
+  // 右箭頭
+  .carousel-control-next {
+    background: url(../images/arrow_right.png) no-repeat center/80px;
     opacity: 1;
-    transition: .3s;
+    transition: 0 0.3s;
+    z-index: 6;
+  }
+  .carousel-control-next:hover {
+    background: url(../images/arrow_right_hover.png) no-repeat center/100px;
   }
 
-  .carousel-control-next:hover{
-    background: url('../images/arrow_right_hover.png') no-repeat center/100px;
-  }
-
-  @include lg{
+  @include lg {
     height: 100vh;
     margin-top: 0;
-    
-    .mask{
+
+    .mask {
       position: absolute;
       left: 0;
       top: 0;

@@ -1,9 +1,8 @@
-#section01{
+#section01 {
   @extend %frame;
   top: -50px;
-
-  @include lg{
+  @include lg {
     top: 0;
-    background: url('../images/section01_top_mask.png') no-repeat center top/cover;
+    background: url('../images/section01_top_mask.png') no-repeat center top/100%;
   }
 }
