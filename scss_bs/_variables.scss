@@ -363,7 +363,7 @@ $enable-shadows: false !default;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
-// 專案修改 => 改成 false，不能註解
+// 專案修改 => 改成 false，這樣 GSAP 的 scrollToPlugin 才會正常，不會被 scroll-behavior:smooth 影響
 $enable-smooth-scroll: false !default;
 $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
